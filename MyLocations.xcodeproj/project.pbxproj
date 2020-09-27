@@ -25,6 +25,7 @@
 		8ED44FB1252065AA0098E9FF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED44FB0252065AA0098E9FF /* LocationCell.swift */; };
 		8ED44FB5252101120098E9FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED44FB4252101120098E9FF /* MapKit.framework */; };
 		8ED44FBB252104DE0098E9FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED44FBA252104DE0098E9FF /* MapViewController.swift */; };
+		8ED44FBE252135D50098E9FF /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED44FBD252135D40098E9FF /* UIImage+Resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8ED44FB0252065AA0098E9FF /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8ED44FB4252101120098E9FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8ED44FBA252104DE0098E9FF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8ED44FBD252135D40098E9FF /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		8EC395EC2516D912008A7C8C = {
 			isa = PBXGroup;
 			children = (
+				8ED44FBD252135D40098E9FF /* UIImage+Resize.swift */,
 				8ED44FA225202E1A0098E9FF /* Location+CoreDataClass.swift */,
 				8ED44FA325202E1A0098E9FF /* Location+CoreDataProperties.swift */,
 				8EC395F72516D912008A7C8C /* MyLocations */,
@@ -191,6 +194,7 @@
 				8ED44FB1252065AA0098E9FF /* LocationCell.swift in Sources */,
 				8EC395F92516D912008A7C8C /* AppDelegate.swift in Sources */,
 				8EC395FB2516D912008A7C8C /* SceneDelegate.swift in Sources */,
+				8ED44FBE252135D50098E9FF /* UIImage+Resize.swift in Sources */,
 				8ED44FA025202C160098E9FF /* DataModel.xcdatamodeld in Sources */,
 				8E559F4825181189009E4791 /* HudView.swift in Sources */,
 				8ED44FA425202E1A0098E9FF /* Location+CoreDataClass.swift in Sources */,

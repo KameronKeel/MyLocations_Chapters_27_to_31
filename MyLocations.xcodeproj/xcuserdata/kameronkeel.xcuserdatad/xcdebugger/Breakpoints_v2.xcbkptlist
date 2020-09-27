@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "14206AA6-EAAB-4686-B8BA-3AA685FE99EA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyLocations/LocationCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "LocationCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - ef33ab85b5bdc7b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.descriptionLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - d8bf5ad6649563c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.descriptionLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - d4b7a0c8b7bcaf3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.descriptionLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - 294a656bc46b59dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.descriptionLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - e093190aeac9508b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MyLocations.LocationCell"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "EEC72F95-4DBA-4778-B858-2CD5A28C4B87 - d18132edca29378d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyLocations.LocationCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyLocations.LocationCell&gt;"
+                  moduleName = "MyLocations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kameronkeel/Desktop/iOS%20Apps/MyLocations/MyLocations/LocationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

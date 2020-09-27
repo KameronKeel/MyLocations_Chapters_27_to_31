@@ -189,7 +189,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="DCQ-8E-0bZ">
                                         <rect key="frame" x="20" y="223" width="374" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DCQ-8E-0bZ" id="EjG-ti-js0">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DCQ-8E-0bZ" id="EjG-ti-js0">
                                             <rect key="frame" x="0.0" y="0.0" width="342.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -199,12 +199,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lX4-0p-XAq">
+                                                    <rect key="frame" x="145" y="0.0" width="164" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="SKU-2U-itB"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="CwN-Bc-jQf" secondAttribute="bottom" constant="0.33000000000000002" id="14H-KZ-Vs5"/>
                                                 <constraint firstItem="CwN-Bc-jQf" firstAttribute="leading" secondItem="EjG-ti-js0" secondAttribute="leadingMargin" id="620-B7-y7k"/>
                                                 <constraint firstItem="CwN-Bc-jQf" firstAttribute="leading" secondItem="EjG-ti-js0" secondAttribute="leadingMargin" id="Jcm-Qc-cVo"/>
+                                                <constraint firstAttribute="bottom" secondItem="lX4-0p-XAq" secondAttribute="bottom" constant="-19.329999999999998" id="QDU-rV-jHr"/>
+                                                <constraint firstItem="lX4-0p-XAq" firstAttribute="leading" secondItem="CwN-Bc-jQf" secondAttribute="trailing" constant="45" id="Y99-ol-w6j"/>
                                                 <constraint firstItem="CwN-Bc-jQf" firstAttribute="top" secondItem="EjG-ti-js0" secondAttribute="topMargin" constant="1" id="aut-sw-C5h"/>
+                                                <constraint firstAttribute="trailing" secondItem="lX4-0p-XAq" secondAttribute="trailing" constant="33.670000000000002" id="gJo-Ie-APf"/>
+                                                <constraint firstItem="lX4-0p-XAq" firstAttribute="top" secondItem="EjG-ti-js0" secondAttribute="top" id="hNy-gf-i4o"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -338,10 +348,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="CwN-Bc-jQf" id="SW1-n7-7zu"/>
                         <outlet property="addressLabel" destination="Jbd-QB-mA6" id="7Dq-7U-Rer"/>
                         <outlet property="categoryLabel" destination="yHn-yT-PZu" id="8hd-5e-Phe"/>
                         <outlet property="dateLabel" destination="ZrD-3n-e6C" id="cfG-iO-8Jm"/>
                         <outlet property="descriptionTextView" destination="upP-a9-JW4" id="9Vv-1S-Qv8"/>
+                        <outlet property="imageHeight" destination="SKU-2U-itB" id="KrW-6n-zuJ"/>
+                        <outlet property="imageView" destination="lX4-0p-XAq" id="4yG-KM-HXg"/>
                         <outlet property="latitudeLabel" destination="hpN-zV-mQE" id="ypA-b2-G1j"/>
                         <outlet property="longitudeLabel" destination="WXH-qo-IXW" id="ES6-WE-jWg"/>
                     </connections>
@@ -367,32 +380,42 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75j-tL-E4e">
-                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                            <rect key="frame" x="76" y="11" width="318" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT9-4W-r1r">
-                                            <rect key="frame" x="20" y="30" width="374" height="17"/>
+                                            <rect key="frame" x="76" y="30" width="318" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-ML-AAj">
+                                            <rect key="frame" x="16" y="2" width="52" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="Rla-k2-JJD"/>
+                                                <constraint firstAttribute="width" constant="52" id="wIJ-ax-r4X"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="qT9-4W-r1r" firstAttribute="top" secondItem="WWS-IN-vhN" secondAttribute="topMargin" constant="19" id="6Pa-0i-aNN"/>
+                                        <constraint firstItem="75j-tL-E4e" firstAttribute="leading" secondItem="xKj-ML-AAj" secondAttribute="trailing" constant="8" id="Jom-Cd-xqP"/>
+                                        <constraint firstItem="xKj-ML-AAj" firstAttribute="leading" secondItem="WWS-IN-vhN" secondAttribute="leading" constant="16" id="Ohx-Ef-cZX"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="75j-tL-E4e" secondAttribute="bottom" constant="15" id="SSN-I7-cfx"/>
-                                        <constraint firstItem="75j-tL-E4e" firstAttribute="leading" secondItem="WWS-IN-vhN" secondAttribute="leadingMargin" id="eRn-EF-akD"/>
+                                        <constraint firstItem="qT9-4W-r1r" firstAttribute="leading" secondItem="xKj-ML-AAj" secondAttribute="trailing" constant="8" id="clg-H9-SXC"/>
                                         <constraint firstItem="75j-tL-E4e" firstAttribute="top" secondItem="WWS-IN-vhN" secondAttribute="topMargin" id="ffK-OC-qI1"/>
                                         <constraint firstItem="qT9-4W-r1r" firstAttribute="bottom" secondItem="WWS-IN-vhN" secondAttribute="bottomMargin" id="hD9-fB-VfD"/>
                                         <constraint firstItem="qT9-4W-r1r" firstAttribute="trailing" secondItem="WWS-IN-vhN" secondAttribute="trailingMargin" id="naf-Xc-4Bf"/>
-                                        <constraint firstItem="qT9-4W-r1r" firstAttribute="leading" secondItem="WWS-IN-vhN" secondAttribute="leadingMargin" id="oFp-Jw-Gfx"/>
                                         <constraint firstItem="75j-tL-E4e" firstAttribute="trailing" secondItem="WWS-IN-vhN" secondAttribute="trailingMargin" id="uFH-qf-QCM"/>
+                                        <constraint firstItem="xKj-ML-AAj" firstAttribute="top" secondItem="WWS-IN-vhN" secondAttribute="top" constant="2" id="xcd-iL-aoT"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="qT9-4W-r1r" id="FE1-Zq-C5J"/>
                                     <outlet property="descriptionLabel" destination="75j-tL-E4e" id="hQS-PF-KH7"/>
+                                    <outlet property="photoImageView" destination="xKj-ML-AAj" id="ADv-3J-vnf"/>
                                     <segue destination="tUL-CC-dMF" kind="show" identifier="EditLocation" id="65L-wO-zl2"/>
                                 </connections>
                             </tableViewCell>
